@@ -10,9 +10,9 @@ def create_app():
 
     # initialize database
     from piolin.db import init_db
-    from piolin.models import Message
-    from piolin.models import Tweet
-    from piolin.models import User
+    from piolin.models.message import Message
+    from piolin.models.tweet import Tweet
+    from piolin.models.user import User
     init_db(app)
 
     from piolin.routes.user import UserAPI
